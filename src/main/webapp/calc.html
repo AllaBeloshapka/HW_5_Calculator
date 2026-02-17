@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+
+<!--Тело страницы-->
+<body>
+<!-- Создаём форму для получения данных от пользователя с методом POST, чтобы было достаточно много места для данных-->
+<form method="POST" action="calc">   <!-- action будет ориентиром на нашу страничку и виден в адресной строке -->
+
+<!--  Создаём поля для ввода чисел-->
+    <input type="number" name="num1" required>
+    <input type="number" name="num2" required>
+
+<!--  Создаём выпадающий список для выбора операции с числами-->
+    <select name="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+<!--    Создаём кнопку для активации операции с типом submit-->
+    <button type="submit">Посчитать</button>
+</form>
+
+</body>
+</html>
+
